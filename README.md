@@ -1,29 +1,26 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Yuting Shi       |
+| Date         | 04/01/2026                 |
+| Course       | Spring    |
+| Assignment # |      4                     |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+A company has two systems for accessing customer data, a new one (HTTPS) and outdated legacy (USB). This assignment is to integrate the old with the new and be able to use the new system's interface with the old system's API. 
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/yutingshi02/cs-665-assignment4
 
 # Implementation Description 
-
+I am going to use the Adapter pattern since it is used when you have incompatible interfaces that you want to make compatible. I am using the Object Adapter implementation (adapter class contains an instance of the adaptee class). The old system is the adapter and the new system is the adaptee. 
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
+- Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
+- Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
 - Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+- If applicable, mention any design patterns you have used and explain why they were chosen.
 
 
 # Maven Commands

@@ -18,9 +18,16 @@ I am going to use the Adapter pattern since it is used when you have incompatibl
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
+This implementation is flexible because the adapter keeps the old and new systems separate. If we wanted to add another system in the future we could just create a new adapter for it without changing the existing code. If a system is no longer needed, it can also be removed without affecting the rest of the program.
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
+Each class has one clear responsibility and everything is simply named. The legacy interface represents the old system and the HTTPS interface represents the new system, and the adapter connects the two. I also added the comments I was supposed to, apologies for missing the blackboard comment. 
+
 - Describe how you have avoided duplicated code and why it is important.
+I avoided duplicated code by keeping the logic for each system inside its own class instead of repeating it.The HTTPS logic is only written once in its implementation and the adapter just reuses it instead of copying it. 
+
 - If applicable, mention any design patterns you have used and explain why they were chosen.
+This project uses the Adapter Pattern. I chose this pattern because it makes two incompatible interfaces work together. The adapter allows the new HTTPS-based system to be used through the old USB interface without modifying either system directly which keeps the design clean and reusable. I used the Object Adapter implementation. 
 
 
 # Maven Commands
